@@ -43,7 +43,7 @@ page '/*.txt', layout: false
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  config[:host] = "https://jimmynguyc.github.io/builtwithruby"
+  activate :asset_host, :host => 'https://jimmynguyc.github.io/builtwithruby'
 end
 
 config[:build_dir] = 'docs'
